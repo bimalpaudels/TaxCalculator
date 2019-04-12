@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_Bimal">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tax Calculator"
+        android:textSize="40dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tvSalary"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:text="Enter your salary(monthly):"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvTitle"
+
+        />
+
+    <EditText
+        android:id="@+id/etSalary"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/tvSalary"
+        android:layout_below="@+id/tvTitle"
+
+        />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="92dp"
+        android:text="Calculate TAX"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvSalary"
+        />
+
+    <TextView
+        android:id="@+id/tvTax"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:textSize="27dp"
+        android:text="Your Income tax is:"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnCalculate"
+        />
+
+    <TextView
+        android:id="@+id/tvTaxResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCalculate"
+        android:layout_toEndOf="@+id/tvTax"
+        android:layout_marginTop="20dp"
+        android:textSize="27dp"
+        />
+</RelativeLayout>
